@@ -24,7 +24,8 @@ Scenario: Login User valid username , valid password , remember me selected
   And he or she enters 'Demo123!' into the login Password field
   And he or she clicks the Remember Me checkbox
   And he or she submits the login request
-  Then Josh verifies he or she is at the Home page  And he or she verifies the remember-me cookie is present
+  Then Josh verifies he or she is at the Home page  
+  And he or she verifies the remember-me cookie is present
 
 ##Cucumber: Scenario Tags[p100021]##
 @RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318128
@@ -34,7 +35,8 @@ Scenario: Login User valid username , valid password , remember me not selected
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
-  Then Josh verifies he or she is at the Home page  And he or she verifies the remember-me cookie is not present
+  Then Josh verifies he or she is at the Home page  
+  And he or she verifies the remember-me cookie is not present
 
 ##Cucumber: Scenario Tags[p100021]##
 @RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318364
@@ -42,7 +44,7 @@ Scenario: Login User valid username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
-  And he or she enters 'IYsJtycqpwswx928' into the login Password field
+  And he or she enters 'mHUMdaQDfptyrhoUGbY8153' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -62,7 +64,7 @@ Scenario: Login User invalid username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 0' into the login Username field
-  And he or she enters 'DpDeroHaxAQsmUD1' into the login Password field
+  And he or she enters 'bZnTOSZmifcdiMc26' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -82,7 +84,7 @@ Scenario: Login User empty username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters '^dUsername^' into the login Username field
-  And he or she enters 'aetpsCdk012' into the login Password field
+  And he or she enters 'zcFvQthCC33' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -102,7 +104,7 @@ Scenario: Login User expired username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'account_non_expired EQUALS 0' into the login Username field
-  And he or she enters 'jrHftfPkBitDRFL1' into the login Password field
+  And he or she enters 'hxlwXWohRZoAJPTh1186' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -122,7 +124,7 @@ Scenario: Login User invald username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'invald username' into the login Username field
-  And he or she enters 'YVRWCpfhrnUqRvQp18988' into the login Password field
+  And he or she enters 'eTXcKIsVLiWgcNBR59917' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -142,6 +144,6 @@ Scenario: Login User locked username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'account_non_locked EQUALS 0' into the login Username field
-  And he or she enters 'dyFaVLMUSQxBm755' into the login Password field
+  And he or she enters 'ycHfxZkAGfniGJq1' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
