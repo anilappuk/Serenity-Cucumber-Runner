@@ -6,20 +6,20 @@ Feature: Login User
 
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/344871317700
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871317700
 Scenario: Login User valid username , empty password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters '' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474120224
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871317920
 Scenario: Login User valid username , valid password , remember me selected  
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she clicks the Remember Me checkbox
@@ -27,121 +27,121 @@ Scenario: Login User valid username , valid password , remember me selected
   Then Josh verifies he or she is at the Home page  And he or she verifies the remember-me cookie is present
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318128
 Scenario: Login User valid username , valid password , remember me not selected  
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is at the Home page  And he or she verifies the remember-me cookie is not present
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474120916
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318364
 Scenario: Login User valid username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
-  And he or she enters 'cOAdoutZqBWfWpjHCu1' into the login Password field
+  And he or she enters 'IYsJtycqpwswx928' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474121124
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318572
 Scenario: Login User invalid username , valid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 0' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474121332
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871319024
 Scenario: Login User invalid username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 0' into the login Username field
-  And he or she enters 'eZpGdmbvqglKkenemxz644' into the login Password field
+  And he or she enters 'DpDeroHaxAQsmUD1' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474121540
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871319232
 Scenario: Login User empty username , valid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters '^dUsername^' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474121748
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871319440
 Scenario: Login User empty username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters '^dUsername^' into the login Username field
-  And he or she enters 'gYLGxPILl03' into the login Password field
+  And he or she enters 'aetpsCdk012' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474121956
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871319648
 Scenario: Login User expired username , valid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'account_non_expired EQUALS 0' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474122164
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871319856
 Scenario: Login User expired username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'account_non_expired EQUALS 0' into the login Username field
-  And he or she enters 'cRZBLHdJtgDvD114' into the login Password field
+  And he or she enters 'jrHftfPkBitDRFL1' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474122396
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871320064
 Scenario: Login User invald username , valid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'invald username' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474122604
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871320272
 Scenario: Login User invald username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'invald username' into the login Username field
-  And he or she enters 'cNAJOrpjTIwuG15' into the login Password field
+  And he or she enters 'YVRWCpfhrnUqRvQp18988' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474122872
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871320480
 Scenario: Login User locked username , valid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'account_non_locked EQUALS 0' into the login Username field
   And he or she enters 'Demo123!' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/270352442800/detail/testcase/331474123252
+@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871320692
 Scenario: Login User locked username , invalid password   
   Given Josh is a registered user
-  When Josh navigates to the Login page  
+  When Josh navigates to the Login page
   And he or she enters 'account_non_locked EQUALS 0' into the login Username field
-  And he or she enters 'UdmYPbYWvSpFfCtlK68' into the login Password field
+  And he or she enters 'dyFaVLMUSQxBm755' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
