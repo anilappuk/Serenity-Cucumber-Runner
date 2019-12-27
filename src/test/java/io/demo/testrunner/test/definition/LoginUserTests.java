@@ -25,7 +25,7 @@ public class LoginUserTests {
 	private LoginSteps login;
 	private FindTDMData tdmData = new FindTDMData();
 	private String user;
-	private String use= "SystemTest"; 
+	private String use= "DigitalBankST"; 
 	private String get = "username";
 	private String from = "Login";
 	private String where ;
