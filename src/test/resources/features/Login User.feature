@@ -1,4 +1,3 @@
-##Cucumber: Feature Tags[f100020]##
 Feature: Login User
   As a registered user
   I want to authenticate into the application
@@ -44,7 +43,7 @@ Scenario: Login User valid username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
-  And he or she enters 'mHUMdaQDfptyrhoUGbY8153' into the login Password field
+  And he or she enters 'UjnUdkklIPmqnrvg4084' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -64,7 +63,7 @@ Scenario: Login User invalid username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'enabled EQUALS 0' into the login Username field
-  And he or she enters 'bZnTOSZmifcdiMc26' into the login Password field
+  And he or she enters 'mOdCRDvqfaySDyKnrd0590' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -84,7 +83,7 @@ Scenario: Login User empty username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters '^dUsername^' into the login Username field
-  And he or she enters 'zcFvQthCC33' into the login Password field
+  And he or she enters 'BfhTzsLQgNqRHgTwloh22' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -104,7 +103,7 @@ Scenario: Login User expired username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'account_non_expired EQUALS 0' into the login Username field
-  And he or she enters 'hxlwXWohRZoAJPTh1186' into the login Password field
+  And he or she enters 'dfzVyRDTQylH39' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -124,7 +123,7 @@ Scenario: Login User invald username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'invald username' into the login Username field
-  And he or she enters 'eTXcKIsVLiWgcNBR59917' into the login Password field
+  And he or she enters 'AugJMrFtUJthO64923' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
@@ -144,6 +143,6 @@ Scenario: Login User locked username , invalid password
   Given Josh is a registered user
   When Josh navigates to the Login page
   And he or she enters 'account_non_locked EQUALS 0' into the login Username field
-  And he or she enters 'ycHfxZkAGfniGJq1' into the login Password field
+  And he or she enters 'BDkwtkzQpnxhnVi8051' into the login Password field
   And he or she submits the login request
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
