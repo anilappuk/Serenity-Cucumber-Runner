@@ -15,29 +15,6 @@ Scenario: Login User valid username , empty password
   Then Josh verifies he or she is presented with a error message indicating invalid credentials or access denied
 
 ##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871317920
-Scenario: Login User valid username , valid password , remember me selected  
-  Given Josh is a registered user
-  When Josh navigates to the Login page
-  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
-  And he or she enters 'Demo123!' into the login Password field
-  And he or she clicks the Remember Me checkbox
-  And he or she submits the login request
-  Then Josh verifies he or she is at the Home page  
-  And he or she verifies the remember-me cookie is present
-
-##Cucumber: Scenario Tags[p100021]##
-@RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318128
-Scenario: Login User valid username , valid password , remember me not selected  
-  Given Josh is a registered user
-  When Josh navigates to the Login page
-  And he or she enters 'enabled EQUALS 1 AND account_non_expired EQUALS 1 AND account_non_locked EQUALS 1 AND credentials_non_expired EQUALS 1 AND rolename EQUALS ROLE_USER' into the login Username field
-  And he or she enters 'Demo123!' into the login Password field
-  And he or she submits the login request
-  Then Josh verifies he or she is at the Home page  
-  And he or she verifies the remember-me cookie is not present
-
-##Cucumber: Scenario Tags[p100021]##
 @RALLYLINK_https://rally1.rallydev.com/#/321443953008/detail/testcase/344871318364
 Scenario: Login User valid username , invalid password   
   Given Josh is a registered user
